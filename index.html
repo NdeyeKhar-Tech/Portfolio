@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="portfolio.css" />
 </head>
+<script type="module" src="formulaire-contact.js"></script>
 <body>
 
   <!-- ===== LOADER ===== -->
@@ -490,20 +491,20 @@
             <div class="form-row">
               <div class="form-group">
                 <label>Votre nom</label>
-                <input type="text" placeholder="Jean Dupont"  required />
+                <input type="text" id="nom" placeholder="Jean Dupont"  required />
               </div>
               <div class="form-group">
                 <label>Votre email</label>
-                <input type="email" placeholder="jean@exemple.com"  required />
+                <input type="email" id="email" placeholder="jean@exemple.com"  required />
               </div>
             </div>
             <div class="form-group">
               <label>Sujet</label>
-              <input type="text" placeholder="Création de site e-commerce" />
+              <input type="text" id="sujet" placeholder="Création de site e-commerce" />
             </div>
             <div class="form-group">
               <label>Votre message</label>
-              <textarea rows="5" placeholder="Décrivez votre projet..."  required></textarea>
+              <textarea rows="5" id="message" placeholder="Décrivez votre projet..."  required></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-full">
               Envoyer le message
